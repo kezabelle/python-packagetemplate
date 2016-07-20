@@ -38,6 +38,7 @@ def make_readme(root_path):
                 yield f.read()
 
 
+URL = ""
 LONG_DESCRIPTION = "\r\n\r\n----\r\n\r\n".join(make_readme(HERE))
 SHORT_DESCRIPTION = ""
 KEYWORDS = (
@@ -66,6 +67,8 @@ setup(
     cmdclass={"test": PyTest},
     zip_safe=False,
     keywords=" ".join(KEYWORDS),
+    license="BSD License",
+    url=URL,
     classifiers=[
         "Development Status :: 3 - Alpha",
         "Intended Audience :: Developers",
