@@ -26,4 +26,5 @@ grep -rl 'OWNER' $DIR | xargs sed -i "" "s/OWNER/$OWNERCHOICE/g"
 grep -rl 'YEAR' $DIR | xargs sed -i "" "s/YEAR/$YEAR/g"
 mv "$DIR/packagename" "$DIR/$PACKAGECHOICE"
 rm "$DIR/setup.sh"
+rm "$DIR/README.md"
 git init $DIR
