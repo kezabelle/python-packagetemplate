@@ -1,7 +1,7 @@
 [run]
 source = PACKAGENAME
 omit =
-    PACKAGENAME/test_*
+    PACKAGENAME/tests/*
 branch = True
 data_file = .coverage
 timid = False
@@ -12,7 +12,7 @@ exclude_lines =
 precision = 0
 show_missing = True
 omit =
-    PACKAGENAME/test_*
+    PACKAGENAME/tests/*
 
 [xml]
 output = coverage.xml
