@@ -28,4 +28,4 @@ mv "$DIR/packagename" "$DIR/$PACKAGECHOICE"
 rm "$DIR/setup.sh"
 rm "$DIR/README.md"
 git init $DIR
-printf '%s\n' 'htmlcov' 'dist' '*.pyo' '*.pyc''.coverage' '*.egg*' > .gitignore
+printf '%s\n' 'htmlcov' 'dist' '*.pyo' '*.pyc''.coverage' '*.egg*' > "$DIR/.gitignore"
