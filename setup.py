@@ -37,12 +37,12 @@ def make_readme(root_path):
             with open(filepath, mode="r", encoding="utf-8") as f:
                 yield f.read()
 
-
+LICENSE = "BSD License"
 URL = ""
 LONG_DESCRIPTION = "\r\n\r\n----\r\n\r\n".join(make_readme(HERE))
 SHORT_DESCRIPTION = ""
 KEYWORDS = (
-
+    "PACKAGENAME",
 )
 
 setup(
@@ -50,6 +50,8 @@ setup(
     version="0.1.0",
     author="OWNER",
     author_email="python-PACKAGENAME@kerynknight.com",
+    maintainer="OWNER",
+    maintainer_email="python-PACKAGENAME@kerynknight.com",
     description=SHORT_DESCRIPTION[0:200],
     long_description=LONG_DESCRIPTION,
     packages=[
@@ -67,7 +69,7 @@ setup(
     cmdclass={"test": PyTest},
     zip_safe=False,
     keywords=" ".join(KEYWORDS),
-    license="BSD License",
+    license=LICENSE,
     url=URL,
     classifiers=[
         "Development Status :: 3 - Alpha",
